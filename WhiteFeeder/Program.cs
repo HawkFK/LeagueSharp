@@ -43,7 +43,7 @@ namespace WhiteFeeder
         {
             Notifications.AddNotification("Loading White Feeder...", 300);
 
-            config = new Menu("White Feeder", "unrealfeeder", true);
+            config = new Menu("White Feeder", "whitefeeder", true);
             config.AddItem(new MenuItem("root.shouldfeed", "Feeding Enabled").SetValue(false));
             config.AddItem(new MenuItem("root.feedmode", "Feeding Mode:").SetValue(new StringList(new[] { "Closest Enemy", "Bottom Lane", "Middle Lane", "Top Lane", "Wait at Dragon", "Wait at Baron", "Most Fed", "Highest Carrying Potential" }
             )));
@@ -62,7 +62,7 @@ namespace WhiteFeeder
             config.AddItem(new MenuItem("root.ghost", "Use Ghost").SetValue(false));
             config.AddItem(new MenuItem("hehehe8", " "));
             config.AddItem(new MenuItem("hehehe5", "Made by Hawk"));
-            config.AddItem(new MenuItem("hehehe6", "v1.0.0.0"));
+            config.AddItem(new MenuItem("hehehe6", "v1.3.3.7"));
             config.AddItem(new MenuItem("hehehe7", "Site: joduska.me"));
             config.AddToMainMenu();
 
